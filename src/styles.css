@@ -90,6 +90,12 @@ h1 {
   max-width: 1240px;
 }
 
+.side {
+  align-content: start;
+  display: grid;
+  gap: 18px;
+}
+
 .panel {
   padding: 18px;
 }
@@ -273,6 +279,160 @@ textarea {
   min-height: 200px;
   justify-content: center;
   text-align: center;
+}
+
+.hint {
+  color: #7a8378;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.error {
+  color: #a03d2a;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.error:empty {
+  display: none;
+}
+
+.batch-picker {
+  display: grid;
+  gap: 8px;
+  max-height: 230px;
+  overflow: auto;
+}
+
+.batch-option {
+  align-items: center;
+  background: #f4f6f1;
+  border: 1px solid #dde1d9;
+  border-radius: 6px;
+  color: #3c443b;
+  display: grid;
+  font-size: 0.85rem;
+  gap: 8px;
+  grid-template-columns: auto 1fr auto;
+  padding: 8px 10px;
+}
+
+.batch-option input {
+  height: 16px;
+  min-height: 16px;
+  padding: 0;
+  width: 16px;
+}
+
+.batches {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.batches > h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.batch {
+  background: #ffffff;
+  border: 1px solid #dde1d9;
+  border-radius: 8px;
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+}
+
+.batch-head {
+  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.batch-head h3 {
+  font-size: 1rem;
+  margin: 0 0 6px;
+}
+
+.batch-figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.batch-status {
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 4px 9px;
+}
+
+.batch-status.pending {
+  background: #f4deb4;
+  color: #694c21;
+}
+
+.batch-status.active {
+  background: #dde8f2;
+  color: #315674;
+}
+
+.batch-status.cancelled {
+  background: #e4e5e1;
+  color: #6e756d;
+}
+
+.batch-items {
+  display: grid;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.batch-items li {
+  align-items: center;
+  background: #f4f6f1;
+  border-radius: 6px;
+  color: #4a5248;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  gap: 8px;
+  padding: 8px 10px;
+}
+
+.batch-items .item-title {
+  font-weight: 700;
+}
+
+.overrun {
+  color: #a03d2a;
+  font-weight: 800;
+}
+
+.complete-form {
+  display: flex;
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.complete-form input {
+  flex: 1 1 130px;
+  width: auto;
+}
+
+.complete-form .primary {
+  flex: 0 0 auto;
+}
+
+.complete-form .error {
+  flex-basis: 100%;
 }
 
 @media (max-width: 900px) {
